@@ -34,7 +34,6 @@ function ChessKnightMovesToGoal(goal_X, goal_Y, path) {
 
 function newMovesFrom(X, Y, visited_coordinates = []) {
     const newMoves = []
-    console.log(visited_coordinates)
     if (X+2 <= 7 && Y+1 <= 7) {newMoves.push([X+2, Y+1])}
     if (X+2 <= 7 && Y-1 >= 0) {newMoves.push([X+2, Y-1])}
     if (X+1 <= 7 && Y+2 <= 7) {newMoves.push([X+1, Y+2])}
